@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://127.0.0.1:5500/assignmentweek4/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Portal</title>
+    <link rel="stylesheet" href="./Student Data Portal_files/styles.css">
+</head>
+
+<body>
+
+    <!-- Compact Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Student Portal</div>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:5500/assignmentweek4/index.html#home">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/assignmentweek4/index.html#about">About</a></li>
+                <li><a href="http://127.0.0.1:5500/assignmentweek4/index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Compact Main Container -->
+    <main class="container">
+
+        <!-- Smaller Hero Image Section -->
+        <section class="hero">
+            <img src="./Student Data Portal_files/215-600x220-grayscale.jpg" alt="Student studying" class="featured-image">
+        </section>
+
+        <!-- Student Data Table Section -->
+        <section class="table-section">
+            <h2>Student Academic Records</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student Class</th>
+                            <th>Student Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Austine Dominic Essien</td>
+                            <td>Web Development</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Sarah Johnson</td>
+                            <td>Digital Marketing</td>
+                            <td>A-</td>
+                        </tr>
+                        <tr>
+                            <td>Michael Chen</td>
+                            <td>Data Analytics</td>
+                            <td>B+</td>
+                        </tr>
+                        <tr>
+                            <td>Emily Davis</td>
+                            <td>Web Development</td>
+                            <td>A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Compact Footer with Name -->
+    <footer>
+        <p>© 2026 Student Data Portal. Designed by Austine Dominic Essien. All rights reserved.</p>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
