@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Practice</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: blue;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        p {
+            color: green;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Website</h1>
+
+    <p>I am learning CSS step by step.</p>
+
+    <button>Click Me</button>
+
+</body>
+</html>
